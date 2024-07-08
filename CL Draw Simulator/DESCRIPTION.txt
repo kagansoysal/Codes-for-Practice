@@ -1,0 +1,17 @@
+* This program allows you to simulate the Champions League draw from the console.
+
+* You can choose the season you want from 2013-2014 to 2023-2024.
+    -The reason why it is not supported before 2013-2014 is that the Wikipedia Champions League page is in a different format.
+    -Implementation of a different draw model after 2023-2024 in real.
+
+* Team, Country and Coefficient informations taken from HTML code of the relevant Wikipedia page.
+
+* After determine the pots, The draw begins.
+
+* The teams in the first pot are placed into groups in order of their withdrawal order.
+
+* Possible groups for the teams in the 2nd, 3rd and 4th pots are calculated and one of these groups is randomly selected and placed in that group.
+
+* When calculating the possible groups that a team can go to, it is calculated by taking into account the possible groups that the other teams in the pot can go to. Thus, draw errors are prevented and no team is left out in the open.
+
+* Each team is determined in pairs with a team from its own country. One team in each pair must be in one of the red groups and the other in one of the blue groups. Because those in the red group play their matches on Tuesday, those in the blue group play on Wednesday and vice versa. (Red groups are A,B,C,D. Blue Groups are E,F,G,H.)
